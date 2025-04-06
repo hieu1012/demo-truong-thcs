@@ -1,0 +1,120 @@
+.button-wrapper {
+    width: 146px;
+    height: 48px;
+    clip-path: polygon(7% 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #eae7e7;
+    /* màu viền */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 4px 10px rgba(242, 240, 240, 0.947));
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.button-wrapper:hover {
+    /* filter: drop-shadow(0 6px 15px rgba(1, 174, 238, 0.4)); */
+    transform: translateX(-10px);
+}
+
+.button {
+    width: 140px;
+    height: 42px;
+    /* background-color: white; */
+    /* color: black; */
+    font-size: 17px;
+    font-weight: 700;
+    clip-path: polygon(7% 0, 100% 0, 100% 100%, 0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+
+}
+
+/* .button-wrapper:hover .button {
+    background-color: #01AEEE;
+    color: white;
+} */
+
+
+
+
+/* CSS dots  */
+::ng-deep .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    /* Làm nó thành hình tròn */
+    background-color: #999;
+    /* Màu chưa active */
+    margin: 0 6px;
+    transition: background-color 0.3s ease;
+}
+
+::ng-deep .carousel-indicators .active {
+    background-color: #fff;
+    /* Màu khi active */
+}
+
+
+
+.layout {
+    margin: 0 140px;
+    margin-top: 25px;
+}
+
+
+/* Moi truong hoc tap - Co so vat chat */
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 6px 8px rgb(226, 222, 222);
+    border-color: white;
+    height: 278px;
+    width: 278px;
+    /* cat những phần nằm ngoài border */
+    overflow: hidden;
+}
+
+.card-layout {
+    margin: 20px 0 0 20px;
+}
+
+.card-body {
+    padding: 4px;
+    /* background-color: #FA7523; */
+    height: 55px;
+    width: 55px;
+    overflow: hidden;
+
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+
+}
+
+.img-cart {
+    margin-left: 2px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+.card-line {
+    display: block;
+    width: 40%;
+    border: 1px solid #FA7523;
+}
+
+.card-text {
+    font-size: 15px;
+    font-weight: 350;
+    margin-top: 20px;
+
+    /* text-align: justify; */
+}

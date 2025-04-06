@@ -16,7 +16,14 @@
     "moduleResolution": "bundler",
     "importHelpers": true,
     "target": "ES2022",
-    "module": "ES2022"
+    "module": "ES2022",
+    "baseUrl": "src", // Đây là đường dẫn gốc cho các module trong dự án
+    "paths": {
+      "@/*": [
+        "app/*", // Đường dẫn này cho phép bạn sử dụng alias '@' để tham chiếu đến thư mục 'app' trong dự án
+        "constants/*", // Đường dẫn này cho phép bạn sử dụng alias '@' để tham chiếu đến thư mục 'constants' trong dự án
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

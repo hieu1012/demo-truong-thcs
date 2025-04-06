@@ -1,0 +1,200 @@
+<div class="fixed bottom-[5%]  right-0 z-10 ">
+    <div class="button-wrapper  ">
+        <div class="button text-red-500 bg-white" (click)="scrollToNKS()">Đăng ký</div>
+    </div>
+    <div class="button-wrapper mt-[10px]">
+        <div class="button bg-[#01AEEE] text-white">Tư vấn</div>
+    </div>
+    <div class="button-wrapper mt-[10px]">
+        <div class="button bg-[#F9AE3B] text-white">099 834 5768</div>
+    </div>
+</div>
+
+<div class=" ">
+    <ngb-carousel [interval]="3000" [pauseOnHover]="true" [wrap]="true">
+        <ng-template ngbSlide *ngFor="let slide of slides">
+            <div class="h-full w-full">
+                <img [src]="slide.src" alt="Slide {{ slide.id }}" class="w-full h-[590px] object-cover" />
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>
+
+
+<div class="layout flex justify-between ">
+    <!-- Gioi thieu -->
+    <div class="w-[580px]">
+        <p class="text-[#FA6F19] font-medium text-[16px]">GIỚI THIỆU</p>
+        <p class="font-bold text-[28px] text-[#01AEEE]">Môi trường học tập lý tưởng - Kiến tạo tương lai vững chắc</p>
+        <p class="text-15px leading-7 whitespace-normal text-justify">Trường Tiểu học - THCS Nguyễn Khuyến, tọa lạc tại
+            Biên Hòa,
+            Đồng Nai, là một
+            trong những
+            ngôi trường có không
+            gian rộng rãi, kiến trúc hiện đại và môi trường giáo dục chất lượng cao. Với sứ mệnh mang đến nền tảng giáo
+            dục vững chắc cho học sinh, nhà trường luôn không ngừng đổi mới và phát triển để đáp ứng tốt nhất nhu cầu
+            học tập của các em. Với đội ngũ giáo viên tận tâm, giàu kinh nghiệm, nhà trường áp dụng phương pháp giảng
+            dạy tiên tiến, khuyến khích học sinh chủ động, sáng tạo và phát triển toàn diện. Chương trình học không chỉ
+            chú trọng đến kiến thức mà còn giúp các em rèn luyện kỹ năng sống, phẩm chất đạo đức và khả năng hội nhập.
+        </p>
+        <button class="border-2 p-[7px]  text-[14px] font-medium border-[#01AEEE] text-[#01AEEE]"
+            style="border-radius: 10px; border-bottom-left-radius: 0px;">
+            Tìm hiểu thêm
+        </button>
+
+        <div class="flex space-x-[20px] mt-[30px]">
+            <div class="w-[50px] h-[50px] mt-[5px]">
+                <img class=" h-full " style="max-width: 50px;" src="assets/image/home/sumenh.png" alt="anh">
+            </div>
+            <div class="">
+                <p class="font-bold m-0 pb-[5px] text-[18px] ">Sứ mệnh</p>
+                <p class="text-sm text-gray-600 leading-7 text-[15px] text-justify">
+                    Nguyễn Khuyến School mang đến nền tảng giáo dục vững chắc cho học sinh, nhà trường luôn không ngừng
+                    đổi mới và phát triển để đáp ứng tốt nhất nhu cầu học tập của các em.
+                </p>
+            </div>
+        </div>
+        <div class="flex space-x-[20px] mt-[10px]">
+            <div class="w-[50px] h-[50px] mt-[5px]">
+                <img class=" h-full " style="max-width: 50px;" src="assets/image/home/tamnhin.png" alt="anh">
+            </div>
+            <div>
+                <p class="font-bold m-0 pb-[5px] text-[18px] ">Tầm nhìn</p>
+                <p class="text-sm text-gray-600 leading-7 text-[15px] text-justify">Xây dựng một môi trường học tập hạnh
+                    phúc, nơi
+                    mỗi học sinh
+                    đều được yêu thương, tôn trọng và phát
+                    triển toàn diện cả về trí tuệ, thể chất lẫn tinh thần.</p>
+            </div>
+        </div>
+        <div class="flex space-x-[20px] mt-[10px]">
+            <div class="w-[50px] h-[50px] mt-[5px]">
+                <img class=" h-full " style="max-width: 50px;" src="assets/image/home/giatri.png" alt="anh">
+            </div>
+            <div>
+                <p class="font-bold m-0 pb-[5px] text-[18px] ">Giá trị cốt lõi</p>
+                <p class="text-sm text-gray-600 leading-7 text-[15px] text-justify">Nhà trường lấy bốn giá trị cốt lõi
+                    làm kim chỉ
+                    nam trong mọi
+                    hoạt động giảng dạy và giáo dục: “Yêu
+                    thương – Tôn trọng – Trách nhiệm – Kỷ luật”.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Moi truong hoc tap - Co so vat chat -->
+    <div class="w-[580px] flex justify-between mt-[130px]">
+        <div class="mt-[30px]">
+            <div class="card mb-[40px]">
+                <div class="card-layout">
+                    <div class="card-body bg-[#FA7523]">
+                        <img class="img-cart" src="assets/image/home/cart1.png" alt="">
+                    </div>
+                    <p class="card-title">Môi trường học tập hạnh phúc</p>
+                    <span class="card-line"></span>
+                    <p class="card-text">Môi trường học tập hạnh phúc, nơi mỗi học sinh đều được yêu thương, tôn trọng
+                        và phát triển.</p>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-layout">
+                    <div class="card-body bg-[#25BB63]">
+                        <img class="img-cart" src="assets/image/home/cart2.png" alt="">
+                    </div>
+                    <p class="card-title">Môi trường học tập hạnh phúc</p>
+                    <span class="card-line"></span>
+                    <p class="card-text">Môi trường học tập hạnh phúc, nơi mỗi học sinh đều được yêu thương, tôn trọng
+                        và phát triển.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card mb-[40px]">
+                <div class="card-layout">
+                    <div class="card-body bg-[#F9AE3B]">
+                        <img class="img-cart" src="assets/image/home/cart3.png" alt="">
+                    </div>
+                    <p class="card-title">Môi trường học tập hạnh phúc</p>
+                    <span class="card-line"></span>
+                    <p class="card-text">Môi trường học tập hạnh phúc, nơi mỗi học sinh đều được yêu thương, tôn trọng
+                        và phát triển.</p>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-layout">
+                    <div class="card-body bg-[#01AEEE]">
+                        <img class="img-cart" src="assets/image/home/cart4.png" alt="">
+                    </div>
+                    <p class="card-title">Môi trường học tập hạnh phúc</p>
+                    <span class="card-line"></span>
+                    <p class="card-text">Môi trường học tập hạnh phúc, nơi mỗi học sinh đều được yêu thương, tôn trọng
+                        và phát triển.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Chan dung NKS -->
+<div #chanDungNKS class="mt-[40px] layout">
+    <p class="text-[#01AEEE] font-bold text-[28px] ">CHÂN DUNG NKS</p>
+    <p class="text-[15px] leading-7 m-0">Trường Tiểu học và THCS Nguyễn Khuyến tự hào là nơi chắp cánh cho những ước mơ,
+        hun
+        đúc tài
+        năng và đạo đức cho
+        biết bao thế hệ học sinh. Trong số đó, nhiều cựu học sinh đã vươn xa, trở thành những nhà lãnh đạo, chuyên gia,
+        doanh nhân và nghệ sĩ xuất sắc, đóng góp tích cực cho xã hội.</p>
+    <p class="text-[15px] leading-7">Sự thành công của các thế hệ học trò chính là minh chứng cho truyền thống hiếu học,
+        tinh thần
+        nỗ lực không ngừng
+        và sự tận tâm của các thầy cô giáo. Nhà trường luôn tự hào và tri ân những đóng góp của các cựu học sinh, mong
+        rằng họ sẽ tiếp tục lan tỏa những giá trị tốt đẹp, truyền cảm hứng cho thế hệ sau vững bước trên con đường tri
+        thức!</p>
+    <div class="w-[100%]  flex justify-center  mt-[30px]">
+        <div class="flex ">
+            <!-- <div
+                class="w-[315px] h-[315px] border-2 border-dashed rounded-[50%] p-[6px] border-[#01AEEE] flex items-center justify-center">
+                <img class="rounded-[50%] " width=315px height=315px src="assets/image/home/avt2.jpg" alt="avt">
+            </div>
+            <div class="w-[512px] h-[292] ml-[40px] mt-[30px]">
+                <p class="text-[22px] font-bold">"Các thầy cô tạo ra rất nhiều hoạt động, khiến giờ học rất vui và dễ
+                    hiểu"</p>
+                <p class="text-[15px] leading-8">Con thích học Toán nhất, bởi trong lớp các thầy cô tạo ra rất nhiều
+                    hoạt động, khiến giờ học rất vui
+                    và dễ hiểu. Con và các bạn cũng được tham gia nhiều dự án, ứng dụng các kiến thức đã được học vào
+                    thực tiễn đời sống.</p>
+                <p class="text-[16px] font-bold m-0">Trương Anh Khoa</p>
+                <p class="text-[16px] font-bold mt-2">Học sinh lớp 9A1</p>
+            </div> -->
+            <div
+                class="w-[315px] h-[315px] border-2 border-dashed rounded-[50%] p-[6px] border-[#01AEEE] flex items-center justify-center">
+                <img class="rounded-[50%]" width="315px" height="315px" [src]="students[currentIndex].src" alt="avt">
+            </div>
+
+            <div class="w-[512px] ml-[40px] mt-[30px]">
+                <p class="text-[22px] font-bold h-[66px]">{{ students[currentIndex].quote }}</p>
+                <p class="text-[15px] leading-8 h-[96px]">{{ students[currentIndex].description }}</p>
+                <p class="text-[16px] font-bold m-0">{{ students[currentIndex].name }}</p>
+                <p class="text-[16px] font-bold mt-2">{{ students[currentIndex].class }}</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="flex justify-center items-center mt-[30px]">
+        <div class="w-[32px] h-[32px] bg-[#01AEEE] flex items-center justify-center rounded-[50%] mr-[20px] text-white cursor-pointer hover:scale-115 duration-300 ease-in-out"
+            (click)="prevStudent()">
+            <i class="fa-solid fa-chevron-left"></i>
+        </div>
+
+        <div *ngFor="let student of students; let i = index">
+            <img class="rounded-[50%] overflow-hidden mr-[20px] border-[3px] duration-300 ease-in-out" width="67px"
+                height="67px" [src]="student.src" alt="avt" [ngStyle]="{
+              'border-color': i === currentIndex ? '#01AEEE' : 'transparent'
+            }">
+        </div>
+
+        <div class="w-[32px] h-[32px] bg-[#01AEEE] flex items-center justify-center rounded-[50%] text-white cursor-pointer  hover:scale-115 duration-300 ease-in-out"
+            (click)="nextStudent()">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+</div>
