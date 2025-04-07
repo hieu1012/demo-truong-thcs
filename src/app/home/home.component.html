@@ -6,7 +6,7 @@
         <div class="button bg-[#01AEEE] text-white">Tư vấn</div>
     </div>
     <div class="button-wrapper mt-[10px]">
-        <div class="button bg-[#F9AE3B] text-white">099 834 5768</div>
+        <div class="button bg-[#F9AE3B] text-white"><i class="fa-solid fa-phone mr-[4px]"></i> 099 834 5768</div>
     </div>
 </div>
 
@@ -134,8 +134,25 @@
     </div>
 </div>
 
+
+<!-- Giá trị cốt lõi -->
+<div class="layout flex justify-between pt-[0px]">
+    <div class="w-[556px] mt-[60px]">
+        <p class="text-[28px] font-bold text-[#01AEEE]">GIÁ TRỊ CỐT LÕI</p>
+        <p class="text-[15px] pb-[40px]">Nhà trường lấy bốn giá trị cốt lõi làm kim chỉ nam trong mọi hoạt động giảng
+            dạy và giáo
+            dục: “Yêu thương —
+            Tôn trọng — Trách nhiệm — Kỷ luật”.</p>
+        <img src="assets/image/home/giatri1.png" alt="giatri">
+    </div>
+    <div>
+        <img src="assets/image/home/giatri2.png" alt="giatri">
+    </div>
+
+</div>
+
 <!-- Chan dung NKS -->
-<div #chanDungNKS class="mt-[40px] layout">
+<div class="mt-[40px] layout">
     <p class="text-[#01AEEE] font-bold text-[28px] ">CHÂN DUNG NKS</p>
     <p class="text-[15px] leading-7 m-0">Trường Tiểu học và THCS Nguyễn Khuyến tự hào là nơi chắp cánh cho những ước mơ,
         hun
@@ -186,7 +203,7 @@
         </div>
 
         <div *ngFor="let student of students; let i = index">
-            <img class="rounded-[50%] overflow-hidden mr-[20px] border-[3px] duration-300 ease-in-out" width="67px"
+            <img class="rounded-[50%] overflow-hidden mr-[20px] border-[3px]  duration-300 ease-in-out" width="67px"
                 height="67px" [src]="student.src" alt="avt" [ngStyle]="{
               'border-color': i === currentIndex ? '#01AEEE' : 'transparent'
             }">
@@ -197,4 +214,305 @@
             <i class="fa-solid fa-chevron-right"></i>
         </div>
     </div>
+</div>
+
+<!-- Chương trình giao dục -->
+<div class="layout h-[540px]  flex justify-between  pt-[40px]">
+    <div class="w-[39%] h-[100%] flex flex-col justify-between">
+        <div class="h-[49%] bg-[#01AEEE] flex justify-center items-center text-gray-50 rounded-[10px]">
+            <div class=" ">
+                <p class="text-[16px]">CHƯƠNG TRÌNH GIÁO DỤC </p>
+                <p class="font-bold text-[33px]  w-[380px]">Giáo dục toàn diện - Kiến tạo tương lai</p>
+            </div>
+        </div>
+        <div class="h-[49%] w-[100%] bg-[#25BB63] rounded-[10px] flex overflow-hidden ">
+            <div class="w-[50%] px-[20px] py-[30px] text-gray-50 box-border ">
+                <p class="text-[18px] font-bold">CHƯƠNG TRÌNH GIÁO DỤC STEAM</p>
+                <span class="card-line !border-gray-50 mb-[16px]"></span>
+                <p class="text-[15px] ">Môi trường học tập an toàn, tận tâm và sáng tạo, truyền cảm hứng cho
+                    tất cả học
+                    sinh.</p>
+                <p class="text-[17px] pt-[10px]">Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+            <div class="w-[50%] h-[100%]">
+                <img class="w-full h-full object-cover" src="assets/image/home/giaoduc1.png" alt="giaoduc">
+            </div>
+        </div>
+    </div>
+
+    <div class="w-[39%] h-[100%] flex flex-col justify-between">
+        <div class="h-[49%] bg-[#F9AE3B] rounded-[10px] flex overflow-hidden">
+            <div class="w-[50%] h-[100%]">
+                <img class="w-full h-full object-cover" src="assets/image/home/giaoduc2.png" alt="giaoduc">
+            </div>
+            <div class="w-[50%] px-[20px] py-[30px] text-gray-50 box-border">
+                <p class="text-[18px] font-bold">CHƯƠNG TRÌNH TIẾNG ANH TĂNG CƯỜNG</p>
+                <span class="card-line !border-gray-50 mb-[16px]"></span>
+                <p class="text-[15px] ">Môi trường học tập an toàn, tận tâm và sáng tạo, truyền cảm hứng cho
+                    tất cả học
+                    sinh.</p>
+                <p class="text-[17px] pt-[10px]">Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+        </div>
+        <div class="h-[49%] bg-[#0330A2] rounded-[10px] flex overflow-hidden">
+            <div class="w-[50%] px-[20px] py-[30px] text-gray-50 box-border">
+                <p class="text-[18px] font-bold">CHƯƠNG TRÌNH HOẠT ĐỘNG NGOẠI KHÓA</p>
+                <span class="card-line !border-gray-50 mb-[16px]"></span>
+                <p class="text-[15px] ">Môi trường học tập an toàn, tận tâm và sáng tạo, truyền cảm hứng cho
+                    tất cả học
+                    sinh.</p>
+                <p class="text-[17px] pt-[10px]">Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+            <div class="w-[50%] h-[100%]">
+                <img class="w-full h-full object-cover" src="assets/image/home/giaoduc3.png" alt="giaoduc">
+            </div>
+        </div>
+    </div>
+
+    <div class="w-[20%] rounded-[10px] overflow-hidden bg-[#E83A40]">
+        <div class="w-[100%] h-[50%]">
+            <img class="w-full h-full object-cover" src="assets/image/home/giaoduc4.png" alt="giaoduc">
+        </div>
+        <div class="w-[100%] px-[20px] py-[30px] text-gray-50 box-border">
+            <p class="text-[18px] font-bold">CHƯƠNG TRÌNH HOẠT ĐỘNG NGOẠI KHÓA</p>
+            <span class="card-line !border-gray-50 mb-[16px]"></span>
+            <p class="text-[15px] ">Môi trường học tập an toàn, tận tâm và sáng tạo, truyền cảm hứng cho
+                tất cả học
+                sinh.</p>
+            <p class="text-[17px] pt-[10px]">Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+    </div>
+
+</div>
+
+<!-- Hoat dong pho bien cho hoc sinh-->
+<div class="layout pt-[40px] flex justify-between">
+    <div class="w-[482px]">
+        <p class="text-[#FA6F19] text-[16px]">HOẠT ĐỘNG</p>
+        <p class="text-[#01AEEE] text-[28px] font-bold">CÁC HOẠT ĐỘNG PHỔ BIẾN CHO HỌC SINH</p>
+        <p class="text-[15px] text-justify leading-7 pb-[30px]">Trường Tiểu học - THCS Nguyễn Khuyến được thành lập vào
+            năm 2022
+            cung cấp lộ
+            trình học từ
+            lớp 1 đến
+            lớp 9 với đầy tính ưu việt khi kết hợp hài hòa giữa chương trình giáo dục quốc gia với chương trình giáo dục
+            NKS. Nguyễn Khuyến School được xây dựng trên cơ sở kế thừa và phát huy giá trị, bản sắc của nền giáo dục
+            Quốc gia đồng thời chọn lọc tinh hoa của khoa học giáo dục thế giới.</p>
+        <ul class="p-0 flex flex-col gap-[20px] -">
+            <li class="flex items-center">
+                <img class="w-[24px] h-[24px] " src="assets/image/home/check.png" alt="check">
+                <p class="ml-[10px] mb-0 text-justify">Hoạt động phát triển tài năng và nhân cách để các em trở thành
+                    những người học
+                    tập.</p>
+            </li>
+            <li class="flex items-center">
+                <img class="w-[24px] h-[24px]" src="assets/image/home/check.png" alt="check">
+                <p class="ml-[10px] mb-0 text-justify">Hoạt động phát triển tài năng và nhân cách để các em trở thành
+                    những người học
+                    tập.</p>
+            </li>
+            <li class="flex items-center">
+                <img class="w-[24px] h-[24px]" src="assets/image/home/check.png" alt="check">
+                <p class="ml-[10px] mb-0 text-justify">Hoạt động phát triển tài năng và nhân cách để các em trở thành
+                    những người học
+                    tập.</p>
+            </li>
+            <li class="flex items-center">
+                <img class="w-[24px] h-[24px]" src="assets/image/home/check.png" alt="check">
+                <p class="ml-[10px] mb-0 text-justify">Hoạt động phát triển tài năng và nhân cách để các em trở thành
+                    những người học
+                    tập.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="w-[670px]  mt-[50px]">
+        <div class="h-[45%] flex justify-between ">
+            <div class="w-[192px] h-[203px] flex flex-col justify-between">
+                <img class="w-[60px] h-[48px] " src="assets/image/home/hoatdong1.png" alt="hoatdong">
+                <p class="text-[18px] font-bold text-[#01AEEE] m-0">BƠI LỘI</p>
+                <span class="card-line"></span>
+                <p class=" text-[15px] m-0 ">Môi trường học tập an toàn, tận tâm và sáng tạo, truyền cảm hứng cho
+                    tất cả học
+                    sinh</p>
+            </div>
+            <div class="w-[192px] h-[203px] flex flex-col justify-between">
+                <img class="w-[60px] h-[48px] " src="assets/image/home/hoatdong2.png" alt="hoatdong">
+                <p class="text-[18px] font-bold text-[#01AEEE] m-0">OPLYMPIA</p>
+                <span class="card-line"></span>
+                <p class=" text-[15px] m-0 ">Môi trường học tập an toàn, tận tâm và sáng tạo, truyền cảm hứng cho
+                    tất cả học
+                    sinh</p>
+            </div>
+            <div class="w-[192px] h-[203px] flex flex-col justify-between">
+                <img class="w-[60px] h-[48px] " src="assets/image/home/hoatdong3.png" alt="hoatdong">
+                <p class="text-[18px] font-bold text-[#01AEEE] m-0">ĐỌC SÁCH</p>
+                <span class="card-line"></span>
+                <p class=" text-[15px] m-0 ">Môi trường học tập an toàn, tận tâm và sáng tạo, truyền cảm hứng cho
+                    tất cả học
+                    sinh</p>
+            </div>
+        </div>
+        <div class="h-[50%] flex justify-between">
+            <div class="w-[192px] h-[203px] flex flex-col justify-between">
+                <img class="w-[60px] h-[48px] " src="assets/image/home/hoatdong4.png" alt="hoatdong">
+                <p class="text-[18px] font-bold text-[#01AEEE] m-0">VĂN NGHỆ</p>
+                <span class="card-line"></span>
+                <p class=" text-[15px] m-0 ">Môi trường học tập an toàn, tận tâm và sáng tạo, truyền cảm hứng cho
+                    tất cả học
+                    sinh</p>
+            </div>
+            <div class="w-[192px] h-[203px] flex flex-col justify-between">
+                <img class="w-[60px] h-[48px] " src="assets/image/home/hoatdong5.png" alt="hoatdong">
+                <p class="text-[18px] font-bold text-[#01AEEE] m-0">HỘI THẢO</p>
+                <span class="card-line"></span>
+                <p class=" text-[15px] m-0 ">Môi trường học tập an toàn, tận tâm và sáng tạo, truyền cảm hứng cho
+                    tất cả học
+                    sinh</p>
+            </div>
+            <div class="w-[192px] h-[203px] flex flex-col justify-between">
+                <img class="w-[60px] h-[48px] " src="assets/image/home/hoatdong6.png" alt="hoatdong">
+                <p class="text-[18px] font-bold text-[#01AEEE] m-0">KỸ NĂNG SỐNG</p>
+                <span class="card-line"></span>
+                <p class=" text-[15px] m-0 ">Môi trường học tập an toàn, tận tâm và sáng tạo, truyền cảm hứng cho
+                    tất cả học
+                    sinh</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- Form dang ky -->
+<div #formDangKy class="layout flex pt-[20px] justify-between">
+    <div class="">
+        <p class="font-medium text-[16px] text-[#FA6F19]">BẠN CÓ CÂU HỎI CẦN GIẢI ĐÁP ? </p>
+        <p class="font-bold text-[30px] text-[#01AEEE] ">ĐĂNG KÝ ĐỂ ĐƯỢC TƯ VẤN</p>
+
+        <form action="" class="w-[585px]">
+            <p class="text-[15px]">Vui lòng điền thông tin đầy đủ vào ô bên trên, nhà trường sẽ phản hồi lại thông tin
+                của quý phụ
+                huynh.</p>
+            <input class="input" type="text" name="" id="" placeholder="Nhập họ và tên">
+            <div class="flex justify-between">
+                <input class="input input-phone-email" type="text" name="" id="" placeholder="Nhập số điện thoại">
+                <input class="input input-phone-email" type="email" name="" id="" placeholder="Nhập email">
+            </div>
+            <input class="input" type="text" name="" id="" placeholder="Nhập địa chỉ">
+            <!-- Tạo một select option -->
+            <select class="input" name="" id="">
+                <option value="">--Chọn cấp học quan tâm--</option>
+                <option value="">Cấp tiểu học</option>
+                <option value="">Cấp trung học cơ sở</option>
+                <option value="">Cấp trung học phổ thông</option>
+            </select>
+        </form>
+        <div
+            class="flex justify-center h-[50px] w-[100%] bg-[#01AEEE] border rounded-[5px] text-gray-50 text-[18px] font-bold ">
+            <button class="h-full w-full">Gửi</button>
+        </div>
+        <div class="flex justify-start mt-[30px] ">
+            <div class="flex justify-center items-center mr-[60px]">
+                <div class="icon-phone-fanpage"><i class="fa-solid fa-phone"></i></div>
+                <div class="phone-fanpage">
+                    <p class="title-phone-fanpage">Hotline liên hệ</p>
+                    <p class="contact-phone-fanpage">097 993 5773</p>
+                </div>
+            </div>
+            <div class="flex justify-center items-center ">
+                <div class="icon-phone-fanpage"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                <div class="phone-fanpage">
+                    <p class="title-phone-fanpage">Fanpage Trường</p>
+                    <p class="contact-phone-fanpage">fb.com/Nguyenkhuyendongnai</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-[578px] h-[400px] flex justify-between">
+        <div class="">
+            <div class="w-[306px] h-[270px] border1">
+                <img src="assets/image/home/icon5.png" alt="anh">
+            </div>
+            <div class="flex justify-end mt-[20px]">
+                <div class="w-[64px] h-[64px] border1 mr-[20px] bg-[#25BB63] "><img width="50px"
+                        src="assets/image/home/icon1.png" alt="anh"></div>
+                <div class="w-[101px] h-[101px] border1 bg-[#01AEEE]"><img width="90px"
+                        src="assets/image/home/icon2.png" alt="anh">
+                </div>
+            </div>
+        </div>
+        <div class=" ml-[20px] ">
+            <div class="flex justify-start w-[306px] ">
+                <div class="w-[80px] h-[80px] border2 bg-[#E83A40] mr-[20px] mt-[60px]">
+                    <img width="70px" src="assets/image/home/icon3.png" alt="anh">
+                </div>
+                <div class="w-[68px] h-[68px] border2 bg-[#F9AE3B] mt-[20px]">
+                    <img width="60px" src="assets/image/home/icon4.png" alt="anh">
+                </div>
+            </div>
+            <div class="w-[253px] h-[233px] border2 mt-[20px] ">
+                <img src="assets/image/home/icon6.png" alt="anh">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Map va background -->
+<img class="h-[500px] w-full pt-[50px] " src="assets/image/home/bg.png" alt="bg">
+<div class="flex">
+    <img class="h-[240px] w-[720px]" src="assets/image/home/map.png" alt="map">
+    <div class="w-[calc(100%-720px)]  flex">
+        <div class="w-[50%] h-[100%]  bg-[#F9AE3B] text-gray-50 box-border px-[20px] py-[20px]">
+            <p class="text-[18px] font-bold">LIÊN HỆ VỚI CHÚNG TÔI</p>
+            <span class="card-line !border-gray-50"></span>
+            <div class="flex items-center mt-[10px]">
+                <div class="w-[37px] h-[37px] bg-[#FAB64E] flex items-center justify-center rounded-full mr-[20px]">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                    <p class="m-0">Hotline liên hệ</p>
+                    <p class="m-0 text-[15px]">0251 2201 984 - 0251 6542 080</p>
+                </div>
+            </div>
+            <div class="flex items-center mt-[10px]">
+                <div
+                    class="w-[37px] h-[37px] bg-[#FAB64E] flex items-center justify-center rounded-full mr-[20px] flex-shrink-0">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                    <p class="m-0">Địa chỉ</p>
+                    <p class="m-0 text-[15px]">206, Đường Nguyễn Khuyến, Khu phố 5, Phường Trảng Dài, Thành phố Biên
+                        Hòa, Tỉnh Đồng Nai</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-[50%] h-[100%]  bg-[#01AEEE] text-gray-50 box-border px-[20px] py-[20px]">
+            <p class="text-[18px] font-bold">TƯ VẤN TRỰC TUYẾN</p>
+            <span class="card-line !border-gray-50"></span>
+            <div class="flex items-center mt-[10px]">
+                <div class="w-[37px] h-[37px] bg-[#1Ab6F0] flex items-center justify-center rounded-full mr-[20px]">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
+                <div>
+                    <p class="m-0">Hotline trường</p>
+                    <p class="m-0 text-[15px]">0251 2201 984 - 0251 6542 080</p>
+                </div>
+            </div>
+            <div class="flex items-center mt-[10px]">
+                <div
+                    class="w-[37px] h-[37px] bg-[#1Ab6F0] flex items-center justify-center rounded-full mr-[20px] flex-shrink-0">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                    <p class="m-0">Tư vấn trực tuyến</p>
+                    <p class="m-0 text-[15px]">206, Đường Nguyễn Khuyến, Khu phố 5, Phường Trảng Dài, Thành phố Biên
+                        Hòa, Tỉnh Đồng Nai</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>

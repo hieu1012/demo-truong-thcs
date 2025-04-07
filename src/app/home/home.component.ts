@@ -60,7 +60,7 @@ export class HomeComponent {
   }
 
   //Cuon den chan dung NKS
-  @ViewChild('chanDungNKS') chanDungNKS: ElementRef | undefined;
+  @ViewChild('formDangKy') componentDK: ElementRef | undefined;
 
   // scrollToNKS() {
   //   this.chanDungNKS?.nativeElement.scrollIntoView({ behavior: 'smooth' });
@@ -68,7 +68,7 @@ export class HomeComponent {
 
   scrollToNKS() {
     // Lấy phần tử cần cuộn tới
-    const element = this.chanDungNKS?.nativeElement;
+    const element = this.componentDK?.nativeElement;
 
     if (element) {
       // Tính toán vị trí cuộn với khoảng cách 112px phía trên

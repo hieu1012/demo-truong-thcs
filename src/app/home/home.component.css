@@ -2,7 +2,7 @@
     width: 146px;
     height: 48px;
     clip-path: polygon(7% 0, 100% 0, 100% 100%, 0 100%);
-    background-color: #eae7e7;
+    background-color: #f1eeee;
     /* màu viền */
     display: flex;
     align-items: center;
@@ -117,4 +117,82 @@
     margin-top: 20px;
 
     /* text-align: justify; */
+}
+
+/* Form dang ky */
+.input {
+    width: 100%;
+    height: 42px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+.input::placeholder {
+    color: #888;
+    /* Thay đổi màu chữ của placeholder */
+
+}
+
+.input:focus {
+    outline: none;
+    /* border-color: #01AEEE; */
+    /* scale: 1.02; */
+    border: 2px solid #01AEEE;
+}
+
+.input-phone-email {
+    width: 48%;
+    height: 42px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.icon-phone-fanpage {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #F9AE3B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.phone-fanpage {
+    height: 38px;
+}
+
+.title-phone-fanpage {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    color: #01AEEE;
+}
+
+.contact-phone-fanpage {
+    font-size: 15px;
+    margin: 0;
+}
+
+.border1 {
+    /* border: 1px solid #ccc; */
+    overflow: hidden;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.border2 {
+    /* border: 1px solid #ccc; */
+    overflow: hidden;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
